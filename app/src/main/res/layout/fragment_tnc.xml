@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_small"
+    tools:context=".admin.view.fragment.TnCFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xsmall"
+            android:background="@drawable/bg_box"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small">
+
+            <TextView
+                android:id="@+id/txtAbout"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/terms_and_cond"
+                />
+
+            <EditText
+                android:id="@+id/edtAbout"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/about_us"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:text="@string/terms_and_cond"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <com.tourisz.custome_view.PrimaryButton
+            android:id="@+id/btnSave"
+            android:layout_width="@dimen/book_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_medium"
+            android:textAllCaps="false"
+            android:text="@string/save"/>
+    </LinearLayout>
+</ScrollView>

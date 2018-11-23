@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/margin_xsmall"
+    tools:context=".agent.view.fragment.AgentAddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="@dimen/margin_small"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "/>
+
+
+            <!--        android:drawableEnd="@drawable/ic_date_black"
+        android:drawableRight="@drawable/ic_date_black"-->
+            <TextView
+                android:id="@+id/txtEventDateTime"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:layout_marginTop="@dimen/margin_xsmall"
+
+                android:padding="@dimen/margin_small"
+                android:text="@string/events_date_hint" />
+
+            <View
+                android:id="@+id/lineDate"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:background="@color/gray_dark" />
+
+
+            <EditText
+                android:id="@+id/edtShortDesc"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/short_desc_hint"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/margin_small" />
+
+            <EditText
+                android:id="@+id/edtLongDesc"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/larg_desc_hint"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/margin_small" />
+
+
+            <EditText
+                android:id="@+id/edtContactName"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/contact_person_hint"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="@dimen/margin_small"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "/>
+
+            <EditText
+                android:id="@+id/edtContactPhone"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/contact_number_hint"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:digits="+1234567890"
+                android:padding="@dimen/margin_small" />
+
+
+            <EditText
+                android:id="@+id/edtRate"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/rate_room_hint"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/margin_small" />
+
+
+            <EditText
+                android:id="@+id/edtWeblink"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/web_link"
+                android:inputType="textWebEditText"
+                android:maxLines="1"
+                android:padding="@dimen/margin_small" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:text="@string/address_hint"
+                android:padding="@dimen/margin_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:background="@color/gray_dark" />
+
+            <EditText
+                android:id="@+id/edtCity"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/city_hint"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="@dimen/margin_small"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "/>
+
+
+            <Spinner
+                android:id="@+id/spCountry"
+                style="@style/SpinnerTextViewItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:entries="@array/countries"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:background="@color/gray_dark" />
+
+            <Spinner
+                android:id="@+id/spRoomType"
+                style="@style/SpinnerTextViewItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:entries="@array/array_room_type" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:background="@color/gray_dark"
+                android:id="@+id/lineRoom"/>
+
+            <Spinner
+                android:id="@+id/spStatus"
+                style="@style/SpinnerTextViewItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:entries="@array/status_type" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:background="@color/gray_dark" />
+
+            <Spinner
+                android:id="@+id/spAvailability"
+                style="@style/SpinnerTextViewItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:entries="@array/avail_type" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:background="@color/gray_dark" />
+
+            <TextView
+                style="@style/SubTitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:padding="@dimen/margin_small"
+                android:text="@string/add_photos" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvAddPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xsmall"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall" />
+
+
+            <com.tourisz.custome_view.PrimaryButton
+                android:id="@+id/btnCreate"
+                android:layout_width="@dimen/book_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_weight="5"
+                android:text="@string/save"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

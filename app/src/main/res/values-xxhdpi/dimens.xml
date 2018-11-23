@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="login_logo_height">140dp</dimen>
+
+</resources>

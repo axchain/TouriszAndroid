@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/InputTextStyle"
+            android:text="NA"
+            android:layout_margin="@dimen/margin_small"/>
+    </ScrollView>
+
+    <com.tourisz.custome_view.PrimaryButton
+        android:id="@+id/btnOk"
+        style="@style/ButtonMedTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/margin_xsmall"
+        android:layout_weight="5"
+        android:text="@string/ok" />
+
+
+</LinearLayout>

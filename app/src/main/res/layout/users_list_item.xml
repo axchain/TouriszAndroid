@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_small">
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="@dimen/dp_size"
+        android:layout_height="@dimen/dp_size"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_xxsmall"
+            android:layout_marginLeft="@dimen/margin_xxsmall"
+            android:layout_marginRight="@dimen/margin_xxsmall"
+            android:maxLines="1"
+            android:text="Nikhil" />
+
+        <TextView
+            android:id="@+id/txtEmailId"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="2"
+            android:text="nikhil@gmail.com" />
+
+        <TextView
+            android:id="@+id/txtContactNumber"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="1"
+            android:text="9999888877" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

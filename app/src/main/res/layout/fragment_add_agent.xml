@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/margin_xsmall"
+    tools:context=".admin.view.fragment.AddUserFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/fullname_hint"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="@dimen/margin_small"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "/>
+
+
+            <EditText
+                android:id="@+id/edtAgencyName"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/agency_hint"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="@dimen/margin_small" />
+
+
+            <EditText
+                android:id="@+id/edtEmailId"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/margin_small" />
+
+
+            <EditText
+                android:id="@+id/edtContactPhone"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/contact_number_hint"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:digits="+1234567890"
+                android:padding="@dimen/margin_small" />
+
+
+            <Spinner
+                android:id="@+id/spStatus"
+                style="@style/SpinnerTextViewItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:entries="@array/status_type" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_xsmall"
+                android:layout_marginRight="@dimen/margin_xsmall"
+                android:background="@color/gray_dark" />
+
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/InputTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/margin_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SubTitleTextStyle"
+                android:text="@string/password_change_info"
+                android:layout_margin="@dimen/margin_xsmall"
+                />
+
+            <com.tourisz.custome_view.PrimaryButton
+                android:id="@+id/btnCreate"
+                android:layout_width="@dimen/book_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_weight="5"
+                android:text="@string/create"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

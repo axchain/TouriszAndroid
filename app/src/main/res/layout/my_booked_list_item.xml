@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_small">
+
+    <ImageView
+        android:id="@+id/imgHotel"
+        android:layout_width="@dimen/list_icon_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtBookingDate"
+            style="@style/SubTitleBoldTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:maxLines="1"
+             />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_xxsmall"
+            android:layout_marginLeft="@dimen/margin_xxsmall"
+            android:layout_marginRight="@dimen/margin_xxsmall"
+            android:maxLines="1"
+             />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="2"
+            android:text="@string/dummy" />
+
+
+        <TextView
+            android:id="@+id/txtDurationDate"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="1"
+             />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

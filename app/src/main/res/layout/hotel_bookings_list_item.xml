@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_small"
+    android:id="@+id/linRoot">
+
+    <ImageView
+        android:id="@+id/imgHotel"
+        android:layout_width="@dimen/list_icon_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/room"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtCustomerName"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="1"
+             />
+
+        <TextView
+            android:id="@+id/txtHotelName"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="1"
+            />
+
+
+        <TextView
+            android:id="@+id/txtDurationDate"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="2"
+             />
+
+
+        <TextView
+            android:id="@+id/txtNoPerson"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/txtNoRoom"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="1"
+            android:text="2 Rooms"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtCharge"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="1"
+            android:text="Rs. 1000"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtBookingDate"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xxsmall"
+            android:maxLines="1"
+            android:text="At 15/08/2018"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/white">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_small">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNumberTitle"
+                        style="@style/NavTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:padding="@dimen/margin_small"
+                        android:text="@string/confirm_booking"
+                        android:textAllCaps="true" />
+
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        style="@style/TitleTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Hotel 1"
+                        android:textSize="@dimen/text_large" />
+
+                    <LinearLayout
+                        android:id="@+id/linHotel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_small">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            app:srcCompat="@drawable/ic_pin_drop"
+                            android:tint="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txtAddress"
+                            style="@style/HomeTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_xsmall"
+                            android:maxLines="2"
+                            android:text="JW Marriot" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_small">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            app:srcCompat="@drawable/ic_date"
+                            android:tint="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txtDate"
+                            style="@style/HomeTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_xsmall"
+                            android:maxLines="2"
+                            android:text="From 18/08/2018 to 28/08/2018" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_small"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            app:srcCompat="@drawable/ic_time" />
+
+                        <TextView
+                            style="@style/HomeTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_xsmall"
+                            android:maxLines="2"
+                            android:text="11:30 PM"
+                            android:id="@+id/txtTime"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linRoomType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_small">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            app:srcCompat="@drawable/ic_home" />
+
+                        <TextView
+                            style="@style/HomeTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_xsmall"
+                            android:maxLines="2"
+                            android:text="Delux Room"
+                            android:id="@+id/txtRoomType"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linPerson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_small">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            app:srcCompat="@drawable/ic_person" />
+
+                        <TextView
+                            style="@style/HomeTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_xsmall"
+                            android:maxLines="2"
+                            android:text="2 Persons"
+                            android:id="@+id/txtNoPerson"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_small">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            app:srcCompat="@drawable/ic_home" />
+
+                        <TextView
+                            style="@style/HomeTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_xsmall"
+                            android:maxLines="2"
+                            android:text="2 Rooms"
+                            android:id="@+id/txtNoRoom"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_small">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            app:srcCompat="@drawable/ic_rate" />
+
+                        <TextView
+                            android:id="@+id/txtRate"
+                            style="@style/RateTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_xsmall"
+                            android:maxLines="2"
+                            android:text="Rs 1000" />
+                    </LinearLayout>
+
+
+                    <com.tourisz.custome_view.PrimaryButton
+                        android:id="@+id/btnConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/confirm"
+                        android:textAllCaps="true" />
+
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        style="@style/TitleTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_height"
+                        android:background="@android:color/transparent"
+                        android:text="@string/cancel"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/imgPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@mipmap/ic_pay" />
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/margin_xsmall"
+    tools:context=".admin.view.fragment.AddFlyerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFlyer"
+                android:layout_width="300dp"
+                android:layout_height="@dimen/corosal_height"
+                android:layout_margin="@dimen/margin_xsmall"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_banner_placeholder" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="@dimen/margin_xxsmall"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_edit" />
+
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/edtTitle"
+            style="@style/InputTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_xsmall"
+            android:ems="10"
+            android:hint="@string/title"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="@dimen/margin_small" />
+
+
+        <EditText
+            android:id="@+id/edtPosition"
+            style="@style/InputTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_xsmall"
+            android:ems="10"
+            android:hint="@string/flyer_position"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="@dimen/margin_small" />
+
+
+        <Spinner
+            android:id="@+id/spStatus"
+            style="@style/SpinnerTextViewItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_height"
+            android:layout_margin="@dimen/margin_xsmall"
+            android:entries="@array/status_type" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_xsmall"
+            android:layout_marginRight="@dimen/margin_xsmall"
+            android:background="@color/gray_dark" />
+
+
+        <com.tourisz.custome_view.PrimaryButton
+            android:id="@+id/btnCreate"
+            android:layout_width="@dimen/book_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_weight="5"
+            android:text="@string/create"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

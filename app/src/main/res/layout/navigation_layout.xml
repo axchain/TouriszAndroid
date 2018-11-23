@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_xxlarge"
+            android:src="@mipmap/ic_logo_black"
+            android:layout_marginTop="40dp"
+            />
+
+
+        <TextView
+            android:id="@+id/txtNavHome"
+            style="@style/NavTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/home" />
+
+        <include layout="@layout/nav_devider" />
+
+
+        <TextView
+            android:id="@+id/txtNavHotel"
+            style="@style/NavTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="onClick"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/hotel" />
+
+        <include layout="@layout/nav_devider" />
+
+        <TextView
+            android:id="@+id/txtEvent"
+            style="@style/NavTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="onClick"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/events" />
+
+        <include layout="@layout/nav_devider" />
+
+        <TextView
+            android:id="@+id/txtNavBooking"
+            style="@style/NavTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/my_booking" />
+
+        <include layout="@layout/nav_devider" />
+
+        <TextView
+            android:id="@+id/txtNavProfile"
+            style="@style/NavTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/my_profile" />
+
+        <include layout="@layout/nav_devider" />
+
+        <TextView
+            android:id="@+id/txtNavAbout"
+            style="@style/NavTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/about_us" />
+
+        <include layout="@layout/nav_devider" />
+
+        <TextView
+            android:id="@+id/txtNavContact"
+            style="@style/NavTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/contact_us" />
+
+        <include layout="@layout/nav_devider" />
+
+        <TextView
+            android:id="@+id/txtNavLogout"
+            style="@style/NavTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/logout" />
+
+        <include layout="@layout/nav_devider" />
+
+    </LinearLayout>
+
+
+</ScrollView>

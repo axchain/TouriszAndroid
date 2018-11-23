@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/HomeTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:padding="@dimen/margin_medium"
+        android:text="Select number"
+        android:id="@+id/txtNumberTitle"/>
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <com.tourisz.custome_view.PrimaryButton
+            android:id="@+id/btnSet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="5"
+            android:text="@string/set"
+            android:layout_margin="@dimen/margin_xsmall"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/margin_xsmall"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

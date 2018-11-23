@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.view.fragment.OTPFragment"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/txtOtp"
+        style="@style/SmallWhiteTextStyle"
+        android:layout_width="@dimen/otp_text_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:padding="@dimen/margin_xsmall"
+        android:text="@string/otp_action"
+        android:textColor="@color/white" />
+
+    <com.tourisz.custome_view.PinEntryEditText
+        android:id="@+id/edtOtp"
+        style="@style/InputTextStyle"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/input_white_rectangle"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_medium"
+        android:textIsSelectable="false"
+        />
+
+
+    <TextView
+        style="@style/SmallWhiteTextStyle"
+        android:layout_width="@dimen/otp_text_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:padding="@dimen/margin_xsmall"
+        android:text="@string/otp_resend"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        style="@style/ButtonTextStyle"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/verify" />
+    <Button
+        android:id="@+id/btnSend"
+        style="@style/ButtonTextStyle"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/resend" />
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.view.fragment.CommentFragment"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|left"
+        style="@style/InputTextStyle"
+        android:layout_above="@+id/btnComment"
+        android:background="@color/white"
+        android:layout_margin="@dimen/margin_small"
+        android:inputType="textMultiLine"
+        android:hint="@string/enter_comment"
+        android:id="@+id/edtComment"/>
+
+    <com.tourisz.custome_view.PrimaryButton
+        android:id="@+id/btnComment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/comment"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/margin_xsmall"/>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C2655</color>
+    <color name="colorPrimaryDark">#171f48</color>
+    <color name="colorAccent">#394CA3</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_lite">#515151</color>
+    <color name="gray">#efeeee</color>
+    <color name="gray_lite">#dedbdb</color>
+    <color name="gray_dark">#696969</color>
+
+    <color name="red">#df1e1e</color>
+    <color name="black_trans_dialog">#66000000</color>
+
+</resources>

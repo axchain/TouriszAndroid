@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".user.view.fragment.BookNowFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <com.tourisz.custome_view.PrimaryButton
+            android:id="@+id/btnFromDate"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_small"
+            android:drawableLeft="@drawable/ic_date"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:text="@string/from_date"
+            android:textAllCaps="false" />
+
+        <com.tourisz.custome_view.PrimaryButton
+            android:id="@+id/btnToDate"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_large"
+            android:drawableLeft="@drawable/ic_date"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:text="@string/to_date"
+            android:textAllCaps="false" />
+
+        <com.tourisz.custome_view.PrimaryButton
+            android:id="@+id/btnNoPerson"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_large"
+            android:drawableLeft="@drawable/ic_unfold_more"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:text="@string/no_person"
+            android:textAllCaps="false" />
+
+
+        <com.tourisz.custome_view.PrimaryButton            android:id="@+id/btnRoomType"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_large"
+            android:drawableLeft="@drawable/ic_unfold_more"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:text="@string/room_type"
+            android:textAllCaps="false" />
+
+
+        <com.tourisz.custome_view.PrimaryButton            android:id="@+id/btnNoRoom"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_large"
+            android:drawableLeft="@drawable/ic_unfold_more"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:text="@string/no_room"
+            android:textAllCaps="false" />
+
+
+        <com.tourisz.custome_view.PrimaryButton            android:id="@+id/btnBook"
+            style="@style/ButtonTextStyle"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:text="@string/book"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+</ScrollView>

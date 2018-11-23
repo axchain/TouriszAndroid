@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "364776263354",
+    "firebase_url": "https://tourisz-13232.firebaseio.com",
+    "project_id": "tourisz-13232",
+    "storage_bucket": "tourisz-13232.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364776263354:android:bbcfd7dc010b776a",
+        "android_client_info": {
+          "package_name": "com.tourisz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364776263354-8uglfbhvk67amr1jaats1rng6ehjokf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tourisz",
+            "certificate_hash": "20a074ac9422b05efcd104678c8261bcfc93c8dc"
+          }
+        },
+        {
+          "client_id": "364776263354-27m89ek372p65h20o952lt6pts4p6j7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA09eEApHS-Fij5kcqL0BEx0sy7s43Mr4A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364776263354-27m89ek372p65h20o952lt6pts4p6j7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

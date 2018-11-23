@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.view.fragment.ProfileFragment"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/dp_size"
+        android:layout_height="@dimen/dp_size"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_dp"
+        app:civ_border_color="@color/black_trans_dialog"
+        app:civ_border_width="1dp"
+        android:padding="@dimen/margin_small"
+        android:id="@+id/img"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtUName"
+                style="@style/InputTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:padding="@dimen/margin_small"
+                android:text="Name"
+
+                />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                style="@style/InputTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:text="Email Id"
+                android:layout_marginTop="@dimen/margin_medium"
+                />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                style="@style/InputTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:text="Phone Number"
+                android:layout_marginTop="@dimen/margin_medium"
+                />
+
+            <com.tourisz.custome_view.PrimaryButton
+                android:id="@+id/btnChangePass"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/change_pass"
+                android:textAllCaps="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"/>
+
+
+            <LinearLayout
+                android:id="@+id/linChangePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:id="@+id/edtNewPassword"
+                    style="@style/InputTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/input_white_rectangle"
+                    android:ems="10"
+                    android:hint="@string/new_password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/margin_small" />
+
+                <EditText
+                    android:id="@+id/edtConPassword"
+                    style="@style/InputTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/input_white_rectangle"
+                    android:ems="10"
+                    android:hint="@string/con_password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/margin_small" />
+
+
+                <com.tourisz.custome_view.PrimaryButton
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/save"
+                    android:textAllCaps="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_small"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
